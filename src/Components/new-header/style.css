@@ -12,11 +12,6 @@
   border-bottom: 2px solid rgba(128, 128, 128, 0.384);
 }
 
-.header-responsive{
-  border: 3px solid rgba(128, 128, 128, 0.384);
-  padding: 15px 5px;
-}
-
 .header-sub-container {
   display: flex;
   justify-content: space-between;
@@ -144,6 +139,10 @@
 }
 
 @media (max-width: 1024px) {
+  .header-container{
+  border: 3px solid rgba(128, 128, 128, 0.384);
+  padding: 15px 5px;
+  }
   .responsive-sub-container {
     display: flex;
   }

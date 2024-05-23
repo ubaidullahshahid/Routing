@@ -13,7 +13,7 @@ const NewHeader = () => {
   return (
     <>
       <div>
-        <div className="header-container header-responsive">
+        <div className="header-container">
           <div className="header-sub-container">
             <div className="logo-wrap">
               <img src={Logo} className="logo" />
