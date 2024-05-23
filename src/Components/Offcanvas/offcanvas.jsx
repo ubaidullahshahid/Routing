@@ -63,80 +63,66 @@ const Offcanvas = () => {
             ></button>
           </div>
           <div class="offcanvas-body">
-            <p>
-              <span>
-                <FaCartShopping />
-              </span>
-              BabyBoy
-              <MdOutlineKeyboardArrowRight />
-            </p>
-            <p>
-              <span>
-                <LuBaby />
-              </span>
-              Kidush
-            </p>
-            <p>
-              <span>
-                <IoIosCut />
-              </span>
-              Upsherin
-            </p>
-            <div>
-              <p>
+            <div className="offcanvas-menu-wrap">
+              <p className="offcanvas-menu">
                 <span>
-                  <FaChartBar />
+                  <FaCartShopping fontSize={20} />
+                </span>
+                BabyBoy
+              </p>
+              <p className="offcanvas-menu">
+                <span>
+                  <LuBaby fontSize={20} />
+                </span>
+                Kidush
+              </p>
+              <p className="offcanvas-menu">
+                <span>
+                  <IoIosCut fontSize={20} />
+                </span>
+                Upsherin
+              </p>
+              <p className="offcanvas-menu">
+                <span>
+                  <FaChartBar fontSize={20} />
                 </span>
                 Bar Mitzwah
-                <MdOutlineKeyboardArrowRight />
               </p>
-            </div>
-            <div>
-              <p>
+              <p className="offcanvas-menu">
                 <span>
-                  <GiBigDiamondRing />
+                  <GiBigDiamondRing fontSize={20} />
                 </span>
                 Tenoyem
-                <MdOutlineKeyboardArrowRight />
               </p>
-            </div>
-            <div>
-              <p>
+              <p className="offcanvas-menu">
                 <span>
-                  <TbBottle />
+                  <TbBottle fontSize={20} />
                 </span>
                 Bavarfen
-                <MdOutlineKeyboardArrowRight />
               </p>
-            </div>
-            <div>
-              <p>
+              <p className="offcanvas-menu">
                 <span>
-                  <FaGlassCheers />
+                  <FaGlassCheers fontSize={20} />
                 </span>
                 Wedding
-                <MdOutlineKeyboardArrowRight />
               </p>
-            </div>
-            <p>
-              <span>
-                <PiFlowerTulipDuotone />
-              </span>
-              Shiva Bruches
-            </p>
-            <p>
-              <span>
-                <MdOutlineSlowMotionVideo />
-              </span>
-              Videos
-            </p>
-            <div>
-              <p>
+              <p className="offcanvas-menu">
                 <span>
-                  <VscFileSubmodule />
+                  <PiFlowerTulipDuotone fontSize={20} />
+                </span>
+                Shiva Bruches
+              </p>
+              <p className="offcanvas-menu">
+                <span>
+                  <MdOutlineSlowMotionVideo fontSize={20} />
+                </span>
+                Videos
+              </p>
+              <p className="offcanvas-menu">
+                <span>
+                  <VscFileSubmodule fontSize={20} />
                 </span>
                 Others
-                <MdOutlineKeyboardArrowRight />
               </p>
             </div>
           </div>

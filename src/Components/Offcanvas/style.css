@@ -1,25 +1,40 @@
 .offcanvas .offcanvas-header {
-  width: 100%;
-  border-bottom: 2px solid rgba(128, 128, 128, 0.384);
+    width: 100%;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.384);
 }
 
-.offcanvas-links-wrap {
+.offcanvas-container .offcanvas-button {
+  cursor: pointer;
+}
+
+.offcanvas-header .offcanvas-links-wrap {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-.offcanvas .offcanvas-header-links {
+.offcanvas-header .offcanvas-header-links {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.offcanvas .offcanvas-link {
+.offcanvas-header .offcanvas-link {
   text-decoration: none;
   color: black;
 }
 
-.offcanvas-button {
+
+.offcanvas-body .offcanvas-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.offcanvas-body .offcanvas-menu:hover {
+  text-decoration: underline;
   cursor: pointer;
+}
+
+.offcanvas-body .offcanvas-menu-wrap {
+  padding-left: 25px;
 }
