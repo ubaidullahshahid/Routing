@@ -1,0 +1,49 @@
+.simchas-drop-down {
+  padding: 40px 0px 40px 35px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.123);
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.123);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.123);
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: -70px;
+  transition: visibility 0.3s ease;
+  visibility: hidden;
+  color: black;
+}
+
+.simchas-link:hover .simchas-drop-down {
+  visibility: visible;
+}
+
+.simchas-drop-down .drop-down-link:hover {
+  color: grey;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.drop-down-link-icon-wrap {
+  display: flex;
+}
+
+.simchas-drop-down .drop-down-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+.drop-down-icon {
+  color: black;
+  font-size: 20px;
+}
+
+.right-arrow {
+  font-size: 25px;
+}

@@ -1,0 +1,25 @@
+.offcanvas .offcanvas-header {
+  width: 100%;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.384);
+}
+
+.offcanvas-links-wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.offcanvas .offcanvas-header-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offcanvas .offcanvas-link {
+  text-decoration: none;
+  color: black;
+}
+
+.offcanvas-button {
+  cursor: pointer;
+}
