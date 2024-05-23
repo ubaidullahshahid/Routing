@@ -11,6 +11,7 @@ import TurnJS from "./Components/pageFlip/turn";
 import NewHeader from "./Components/new-header/new-header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./App.css";
 
 function App() {
   return (

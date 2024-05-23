@@ -2,10 +2,7 @@ import React from "react";
 import { IoMenu } from "react-icons/io5";
 import "./style.css";
 import { FaCartShopping } from "react-icons/fa6";
-import {
-  MdOutlineKeyboardArrowRight,
-  MdOutlineSlowMotionVideo,
-} from "react-icons/md";
+import { MdOutlineSlowMotionVideo } from "react-icons/md";
 import { LuBaby } from "react-icons/lu";
 import { IoIosCut } from "react-icons/io";
 import { FaChartBar, FaGlassCheers } from "react-icons/fa";
@@ -19,6 +16,49 @@ import { MdOutlineContactSupport } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 
 const Offcanvas = () => {
+  const menuItems = [
+    {
+      icon: <FaCartShopping fontSize={20} />,
+      text: "BabyBoy",
+    },
+    {
+      icon: <LuBaby fontSize={20} />,
+      text: "Kidush",
+    },
+    {
+      icon: <IoIosCut fontSize={20} />,
+      text: "Upsherin",
+    },
+    {
+      icon: <FaChartBar fontSize={20} />,
+      text: "Bar Mitzwah",
+    },
+    {
+      icon: <GiBigDiamondRing fontSize={20} />,
+      text: "Tenoyem",
+    },
+    {
+      icon: <TbBottle fontSize={20} />,
+      text: "Bavarfen",
+    },
+    {
+      icon: <FaGlassCheers fontSize={20} />,
+      text: "Wedding",
+    },
+    {
+      icon: <PiFlowerTulipDuotone fontSize={20} />,
+      text: "Shiva Bruches",
+    },
+    {
+      icon: <MdOutlineSlowMotionVideo fontSize={20} />,
+      text: "Videos",
+    },
+    {
+      icon: <VscFileSubmodule fontSize={20} />,
+      text: "Others",
+    },
+  ];
+
   return (
     <div>
       <div className="offcanvas-container">
@@ -37,9 +77,6 @@ const Offcanvas = () => {
           aria-labelledby="offcanvasWithBackdropLabel"
         >
           <div class="offcanvas-header">
-            {/* <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
-              Offcanvas with backdrop
-            </h5> */}
             <div className="offcanvas-links-wrap">
               <div className="offcanvas-header-links">
                 <IoMdHeartEmpty fontSize={20} />
@@ -54,7 +91,6 @@ const Offcanvas = () => {
                 <Link className="offcanvas-link">Account</Link>
               </div>
             </div>
-
             <button
               type="button"
               class="btn-close text-reset"
@@ -64,66 +100,12 @@ const Offcanvas = () => {
           </div>
           <div class="offcanvas-body">
             <div className="offcanvas-menu-wrap">
-              <p className="offcanvas-menu">
-                <span>
-                  <FaCartShopping fontSize={20} />
-                </span>
-                BabyBoy
-              </p>
-              <p className="offcanvas-menu">
-                <span>
-                  <LuBaby fontSize={20} />
-                </span>
-                Kidush
-              </p>
-              <p className="offcanvas-menu">
-                <span>
-                  <IoIosCut fontSize={20} />
-                </span>
-                Upsherin
-              </p>
-              <p className="offcanvas-menu">
-                <span>
-                  <FaChartBar fontSize={20} />
-                </span>
-                Bar Mitzwah
-              </p>
-              <p className="offcanvas-menu">
-                <span>
-                  <GiBigDiamondRing fontSize={20} />
-                </span>
-                Tenoyem
-              </p>
-              <p className="offcanvas-menu">
-                <span>
-                  <TbBottle fontSize={20} />
-                </span>
-                Bavarfen
-              </p>
-              <p className="offcanvas-menu">
-                <span>
-                  <FaGlassCheers fontSize={20} />
-                </span>
-                Wedding
-              </p>
-              <p className="offcanvas-menu">
-                <span>
-                  <PiFlowerTulipDuotone fontSize={20} />
-                </span>
-                Shiva Bruches
-              </p>
-              <p className="offcanvas-menu">
-                <span>
-                  <MdOutlineSlowMotionVideo fontSize={20} />
-                </span>
-                Videos
-              </p>
-              <p className="offcanvas-menu">
-                <span>
-                  <VscFileSubmodule fontSize={20} />
-                </span>
-                Others
-              </p>
+              {menuItems.map((item, index) => (
+                <p key={index} className="offcanvas-menu">
+                  <span>{item.icon}</span>
+                  {item.text}
+                </p>
+              ))}
             </div>
           </div>
         </div>

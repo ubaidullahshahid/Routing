@@ -1,49 +1,47 @@
-.simchas-drop-down {
+.sub-menu {
   padding: 40px 0px 40px 35px;
   background-color: white;
   border-radius: 30px;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.123);
   -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.123);
   -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.123);
-  width: 220px;
-  color: black;
+  width: 250px;
   position: absolute;
-  top: 30px;
-  left: -70px;
+  top: -20px;
+  right: -225px;
   transition: visibility 0.3s ease;
   visibility: hidden;
+  color: black;
 }
 
-.simchas-link:hover .simchas-drop-down {
+.simchas-drop-down:hover .sub-menu {
   visibility: visible;
 }
 
-.simchas-drop-down .drop-down-link {
+.sub-menu .sub-menu-link {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 130px;
-  margin-bottom: 10px;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
 }
 
-.simchas-drop-down .drop-down-link:hover {
+.sub-menu .sub-menu-link:hover {
   color: rgba(128, 128, 128, 0.521);
   transition: 0.5s;
   font-weight: 700;
 }
 
-.simchas-drop-down .drop-down-link-icon-wrap {
-  position: relative;
-  display: flex;
-}
-
-.simchas-drop-down .drop-down-icon {
-  color: black;
+.sub-menu .sub-menu-icon {
   font-size: 20px;
 }
 
-.drop-down-link-icon-wrap .right-arrow {
-  font-size: 25px;
+.sub-menu .icon-true .sub-menu-icon {
+  color: #009eff;
+  font-size: 30px;
+}
+
+.sub-menu .text-icon-true {
+  color: #009eff;
+  font-size: 20px;
+  font-weight: 400;
 }

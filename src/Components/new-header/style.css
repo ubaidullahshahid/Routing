@@ -1,7 +1,3 @@
-* {
-  font-family: "Nexa", sans-serif;
-}
-
 .header-container {
   width: 100%;
   display: block;
@@ -12,7 +8,7 @@
   border-bottom: 2px solid rgba(128, 128, 128, 0.384);
 }
 
-.header-sub-container {
+.header-container .header-sub-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -21,21 +17,20 @@
 .responsive-sub-container {
   display: none;
   justify-content: space-around;
-  /* padding: 0px 10px; */
   width: 100%;
 }
 
-.logo-wrap {
+.header-container .logo-wrap {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.logo {
+.header-container .logo {
   width: 285px;
 }
 
-.beta-logo {
+.header-container .beta-logo {
   background: #af40f717;
   color: #af40f9;
   font-size: 10px;
@@ -50,44 +45,44 @@
   letter-spacing: 0.7px;
 }
 
-.beta-logo-res {
+.responsive-sub-container .beta-logo-res {
   height: 26px;
   padding: 0px 12px 0px 12px;
   border-radius: 10px;
   margin-top: 3px;
 }
 
-.links-icons-wrap {
+.header-sub-container .links-icons-wrap {
   padding-right: 10px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.links-wrap {
+.header-sub-container .links-wrap {
   gap: 33px;
   display: flex;
   padding-right: 40px;
 }
 
-.links-wrap .link {
+.header-sub-container .links-wrap .link {
   text-decoration: none;
   color: black;
   font-size: 13px;
   font-weight: 600;
 }
 
-.links-wrap .link:hover {
-  color: grey;
+.header-sub-container .links-wrap .link:hover {
+  color: rgba(128, 128, 128, 0.521);
   transition: 0.5s;
   font-weight: 700;
 }
 
-.nav-icons {
+.header-sub-container .nav-icons {
   font-size: 20px;
 }
 
-.ocassions-drop-down {
+.header-sub-container .ocassions-drop-down {
   padding: 30px 30px;
   background-color: white;
   border-radius: 30px;
@@ -106,25 +101,25 @@
   color: black;
 }
 
-.ocassions-drop-down .drop-down-link:hover {
-  color: grey;
+.header-sub-container .ocassions-drop-down .drop-down-link:hover {
+  color: rgba(128, 128, 128, 0.521);
   transition: 0.5s;
   font-weight: 700;
 }
 
-.ocassions-link:hover .ocassions-drop-down {
+.header-sub-container .ocassions-link:hover .ocassions-drop-down {
   visibility: visible;
 }
 
-.ocassions-link {
+.header-sub-container .ocassions-link {
   position: relative;
 }
 
-.simchas-link {
+.header-sub-container .simchas-link {
   position: relative;
 }
 
-.logo-res {
+.responsive-sub-container .logo-res {
   width: 250px;
 }
 
@@ -133,26 +128,26 @@
     display: flex;
     justify-content: center;
   }
-  .header-sub-container {
+  .header-container .header-sub-container {
     width: 80%;
   }
 }
 
 @media (max-width: 1024px) {
-  .header-container{
-  border: 3px solid rgba(128, 128, 128, 0.384);
-  padding: 15px 5px;
+  .header-container {
+    border: 3px solid rgba(128, 128, 128, 0.384);
+    padding: 15px 5px;
   }
-  .responsive-sub-container {
+  .header-container .responsive-sub-container {
     display: flex;
   }
-  .header-sub-container {
+  .header-container .header-sub-container {
     display: none;
   }
 }
 
 @media (max-width: 770px) {
-  .logo {
+  .header-sub-container .logo {
     width: 200px;
   }
 }
